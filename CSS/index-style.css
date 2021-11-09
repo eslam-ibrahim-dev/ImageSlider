@@ -1,0 +1,111 @@
+body
+{
+    font-family: 'segoe ui light';
+    background-color: black;
+}
+.header
+{
+    padding: 1rem 0 3rem;
+    margin: 1rem 0 4rem;
+}
+.header-container
+{
+    background-color:#aeb1c2 ;
+    width: 30%;
+    margin: auto;
+    padding: 5px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+header .header-container::before,
+header .header-container::after
+{
+    content: "";
+    background-color: #aeb1c2;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -30px; 
+}
+header .header-container::before {
+    left: 0;
+    border-top: 15px solid #979ebb; 
+    border-right: 15px solid #979ebb; 
+    border-left: 15px solid #000; 
+    border-bottom: 15px solid #000; 
+}
+
+header .header-container::after {
+    right: 0;
+    border-top: 15px solid #979ebb; 
+    border-left: 15px solid #979ebb; 
+    border-right: 15px solid #000 ; 
+    border-bottom: 15px solid #000; 
+}
+
+h1
+{
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.item
+{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  
+}
+.item img
+{
+    border-radius: 10%;
+}
+.gellary .item:hover .caption
+{
+    transform: scale(1.2,1.2);
+}
+.caption
+{
+    background-color: #fff;
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    border-radius: 10%;
+    bottom: 20px;
+    left: 10%;
+    transition: all 2s;
+}
+.behind
+{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.backimg
+{
+    height: 500px;
+    width: 50%;
+    background-image: url(../img/img-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#close
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.pointercur
+{
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    cursor: pointer; 
+}
